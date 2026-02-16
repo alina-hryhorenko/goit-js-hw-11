@@ -37,10 +37,8 @@ function onFormSubmit(evt) {
     const form = evt.currentTarget;
     const query = form.elements['search-text'].value.trim();
 
-    // ✅ очищаємо поле завжди (але ПІСЛЯ того, як прочитали значення)
     form.reset();
 
-    // ✅ ТЗ: не відправляємо запит якщо порожньо/пробіли
     if (!query) return;
 
     clearGallery();

@@ -2,7 +2,6 @@ import axios from 'axios';
 
 const BASE_URL = 'https://pixabay.com/api/';
 
-// Рекомендовано: ключ у .env -> VITE_PIXABAY_KEY=твій_ключ
 const API_KEY = import.meta.env.VITE_PIXABAY_KEY;
 
 export function getImagesByQuery(query) {
